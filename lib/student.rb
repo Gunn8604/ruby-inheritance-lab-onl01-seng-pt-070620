@@ -1,16 +1,13 @@
 class Student < User 
-  knowledge = []
-  
-  def initialize 
-    #knowledge = []
+  def initialize
+    @knowledge = []
   end
   
-  def learn 
-    
-  end
-  
-  def knowledge 
-    
+  def learn(knowledge)
+    @knowledge << knowledge
   end
 
+  def knowledge
+    @knowledge
+  end
 end
